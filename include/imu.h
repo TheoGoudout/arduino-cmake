@@ -28,6 +28,16 @@ public:
     const position_t getPosition();
     const rotation_t getRotation();
 
+    int16_t getAccelerationRange();
+    int16_t getGyroscopeRange();
+
+    double quidToAcceleration(int16_t quid);
+    double quidToDegree(int16_t quid);
+
+    int16_t accelerationToQuid(double acceleration);
+    int16_t degreeToQuid(double degree);
+
+
 private:
     IMU();
 

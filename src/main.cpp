@@ -7,7 +7,7 @@ void setup() {
     Serial.begin(115200);
 
     // Calibrate IMU
-    // IMU::instance().calibrate();
+    IMU::instance().calibrate();
 }
 
 void loop() {
